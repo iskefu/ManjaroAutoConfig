@@ -1,5 +1,5 @@
 ---
-created: 2024-04-11
+created: 2024-04-11T00:00:00.000Z
 ---
 
 # Docker daemon配置项解释

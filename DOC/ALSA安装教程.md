@@ -6,8 +6,8 @@ created: 2024-04-03T00:00:00.000Z
 
 ```
 sudo pacman -Syu  
-sudo pacman -S alsa-utils alsa-lib  
+sudo pacman -S alsa-utils alsa-lib 
 sudo systemctl start alsa  
-sudo usermod -a -G audio lkf  
+sudo usermod -a -G audio kf  
 dmesg | grep -i alsa
 ```
