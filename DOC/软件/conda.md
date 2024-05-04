@@ -4,22 +4,6 @@ created: 2024-04-06T00:00:00.000Z
 
 # Conda
 
-```zsh
-yay -S miniconda3
-
-nano ~/.zshrc
-export PATH=/opt/miniconda3/bin:$PATH
-source ~/.zshrc
-```
-```
-
-
-conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge
-conda config --set show_channel_urls yes
-
-
-```
-
 恢复默认源
 
 ```

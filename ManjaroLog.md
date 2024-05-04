@@ -1,9 +1,10 @@
+    
+
 ---
 tags:
   - resource
-created: '2024-04-25'
+created: '2024-04-25 '
 ---
-
 ## Plan
 
 ```ad-note
@@ -12,11 +13,13 @@ title: 项目计划&&流程图
 
 ## Notes
 
-```ad-note
-title:项目包含的笔记
-```
-```dataviewjs
+> 项目包含的笔记
 
+```
+
+## title:项目包含的笔记
+
+```dataviewjs
 // 定义文件夹路径，这里需要你指定具体文件夹
 let folderPath = dv.current().file.folder;
 
