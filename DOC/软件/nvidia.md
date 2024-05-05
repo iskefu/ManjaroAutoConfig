@@ -1,3 +1,7 @@
+---
+created: '2024-05-04 '
+---
+
 ```bash
 
 sudo pacman -Syu
@@ -10,8 +14,7 @@ sudo pacman -S linux66-headers --noconfirm # install headers for kernel version
 # set up grub 
 sudo nano /etc/default/grub 
 # modify the line to include the following: 
-# GRUB_CMDLINE_LINUX="nouveau.modeset=0"  
-
+# GRUB_CMDLINE_LINUX="nouveau.modeset=0"
 
 sudo update-grub
 reboot

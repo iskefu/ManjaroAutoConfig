@@ -28,56 +28,37 @@ sudo echo "Defaults:$(logname) !authenticate" >> /etc/sudoers
 # sudo nano /etc/sudoers
 
 
-# 安装yay
-sudo pacman -S yay --noconfirm
+# 安装sudo pacman
+sudo pacman -S  yay   base-devel ---noconfirm
 
 # install 输入法
-yay -S manjaro-asian-input-support-fcitx5 fcitx5 fcitx5-configtool fcitx5-chinese-addons fcitx5-qt fcitx5-gtk --noconfirm
+sudo pacman  -S manjaro-asian-input-support-fcitx5 fcitx5 fcitx5-configtool fcitx5-chinese-addons fcitx5-qt fcitx5-gtk --noconfirm
 echo 'export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export LANG="zh_CN.UTF-8"
-export LC_CTYPE="zh_CN.UTF-8"'  >>  ~/.xprofile
+export LC_CTYPE="zh_CN.UTF-8"'  >  ~/.xprofile
 # nano ~/.xprofile
-
-yay -S latte-dock --noconfirm
-
 
 
 sudo pacman -S obsidian --noconfirm
 
 # Install Visual Studio Code
-yay -S visual-studio-code-bin --noconfirm
+sudo pacman  -S visual-studio-code-bin --noconfirm
 
-## Sublime text
-yay -S sublime-text-4 --noconfirm
-# Shift+Ctrl+P
-# Install Package
-# ChineseLocalizations
 
 ## syncthing
-yay -S syncthing --noconfirm
-
-# uget
-sudo pacman -S uget aria2 --noconfirm
-
-## Kdenlive
-yay -S kdenlive --noconfirm
+sudo pacman  -S syncthing --noconfirm
 
 ## Telegram
-yay -S telegram-desktop --noconfirm
+sudo pacman  -S telegram-desktop --noconfirm
 
 ## OBS Studio
 sudo pacman -S obs-studio --noconfirm
 
-## Google Chrome
-yay -S google-chrome  --noconfirm     
-
-## Ventoy
-yay -S Ventoy --noconfirm
 
 ## ffmpeg
-yay -S ffmpeg --noconfirm
+sudo pacman  -S ffmpeg --noconfirm
 
 
 # 终端代理 proxychains
@@ -93,17 +74,6 @@ sudo pacman -S docker --noconfirm
 sudo systemctl start docker.service 
 sudo systemctl enable docker.service
 sudo usermod -aG docker  $(logname)
-
-# conda
-yay -S miniconda3 --noconfirm
-echo "if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-  source /usr/share/zsh/manjaro-zsh-prompt
-fi
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh" >> /home/$(logname)/.zshrc
-source ~/.zshrc
-# sudo echo /home/$(logname)/.zshrc
-
-
 
 
 
