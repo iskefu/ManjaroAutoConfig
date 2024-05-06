@@ -74,6 +74,9 @@ sudo pacman -S docker --noconfirm
 sudo systemctl start docker.service 
 sudo systemctl enable docker.service
 sudo usermod -aG docker  $(logname)
+sudo pacman -S docker-compose --noconfirm
 
+# pandoc
+sudo pacman -S pandoc   --noconfirm
 
-
+sudo pacman -S nodejs npm --noconfirm

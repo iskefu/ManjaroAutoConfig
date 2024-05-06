@@ -9,5 +9,8 @@ fi
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh" >> /home/$(logname)/.zshrc
 source ~/.zshrc
 # sudo echo /home/$(logname)/.zshrc
+echo "[global]
+index-url = https://mirrors.aliyun.com/pypi/simple/
+trusted-host = mirrors.aliyun.com" > /home/$(logname)/.pip/pip.conf
 
 yay -S google-chrome --noconfirm
